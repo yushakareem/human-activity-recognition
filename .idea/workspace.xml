@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="107a1a8d-e328-466d-adc1-a3ba7c85018e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lQ1RRFxPpDPxfoenMM4rUBRX6P" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\syedy\Desktop\Implementation\human activity recognition\src\main\resources" />
+      <recent name="C:\Users\syedy\Desktop\Implementation\human activity recognition\src\main\java" />
+      <recent name="C:\Users\syedy\Desktop\Implementation\human activity recognition" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainHAR">
+    <configuration name="MainHAR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainHAR" />
+      <module name="HAR.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="anotherMainHAR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="anotherMainHAR" />
+      <module name="HAR.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainHAR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mainHAR" />
+      <module name="HAR.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainHAR" />
+        <item itemvalue="Application.anotherMainHAR" />
+        <item itemvalue="Application.mainHAR" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="107a1a8d-e328-466d-adc1-a3ba7c85018e" name="Default Changelist" comment="" />
+      <created>1607514492181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607514492181</updated>
+      <workItem from="1607514500280" duration="13618000" />
+      <workItem from="1607623864610" duration="5254000" />
+      <workItem from="1607722837101" duration="1119000" />
+      <workItem from="1607962141094" duration="3754000" />
+      <workItem from="1608027879865" duration="2196000" />
+      <workItem from="1608030094538" duration="1988000" />
+      <workItem from="1608032103653" duration="755000" />
+      <workItem from="1608032875121" duration="1572000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="366" y="307" width="495" height="455" key="#Notifications" timestamp="1607962189771">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="-677" width="618" height="428" key="#Notifications/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1607514569541" />
+    <state x="366" y="307" width="495" height="455" key="#Notifications/0.0.1536.824/0.-1080.1920.1080@0.0.1536.824" timestamp="1607962189771" />
+    <state x="690" y="-785" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1607516524888">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="690" y="-785" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1607516524888" />
+    <state x="347" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1607718595441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607718595441" />
+    <state width="1549" height="408" key="GridCell.Tab.0.bottom" timestamp="1608032858804">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1549" height="408" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032858804" />
+    <state width="1493" height="471" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1080@0.0.1536.824" timestamp="1607770016267" />
+    <state width="1493" height="471" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607723118370" />
+    <state width="1549" height="408" key="GridCell.Tab.0.center" timestamp="1608032858804">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1549" height="408" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032858804" />
+    <state width="1493" height="471" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1080@0.0.1536.824" timestamp="1607770016262" />
+    <state width="1493" height="471" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607723118367" />
+    <state width="1549" height="408" key="GridCell.Tab.0.left" timestamp="1608032858803">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1549" height="408" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032858803" />
+    <state width="1493" height="471" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1080@0.0.1536.824" timestamp="1607770016259" />
+    <state width="1493" height="471" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607723118367" />
+    <state width="1549" height="408" key="GridCell.Tab.0.right" timestamp="1608032858804">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1549" height="408" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032858804" />
+    <state width="1493" height="471" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1080@0.0.1536.824" timestamp="1607770016264" />
+    <state width="1493" height="471" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607723118368" />
+    <state width="1077" height="177" key="GridCell.Tab.1.bottom" timestamp="1608032083703">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1077" height="177" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032083703" />
+    <state width="1077" height="177" key="GridCell.Tab.1.center" timestamp="1608032083703">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1077" height="177" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032083703" />
+    <state width="1077" height="177" key="GridCell.Tab.1.left" timestamp="1608032083702">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1077" height="177" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032083702" />
+    <state width="1077" height="177" key="GridCell.Tab.1.right" timestamp="1608032083703">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1077" height="177" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608032083703" />
+    <state x="231" y="-841" width="672" height="678" key="search.everywhere.popup" timestamp="1608030061589">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="231" y="-841" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1608030061589" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HAR$Main.ic" NAME="Main Coverage Results" MODIFIED="1608032219245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

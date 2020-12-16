@@ -20,20 +20,51 @@ public class MainHAR {
         FirebaseApp.initializeApp(options);
 
         // Firebase event-listeners
-        DatabaseReference ref = FirebaseDatabase.getInstance()
-                .getReference("/fd06");
+        DatabaseReference isInRef = FirebaseDatabase.getInstance()
+                .getReference("/fd06/isIn");
 
-        ref.addValueEventListener(new ValueEventListener() {
+        isInRef.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Object document = dataSnapshot.getValue();
-                System.out.println("fd06: " + document);
+            public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
+                // I want to check if it is Kitchen or LivingRoom child
+                // based on that initialize that ontology
+                System.out.println("Child added");
             }
 
             @Override
-            public void onCancelled(DatabaseError error) {
+            public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
+                System.out.println("Child changed");
             }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                System.out.println("Child removed");
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {
+                System.out.println("Child moved");
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {}
         });
+
+//        DatabaseReference kitchenRef = FirebaseDatabase.getInstance()
+//                .getReference("/fd06/isIn/Kitchen");
+//
+//        kitchenRef.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                Object document = dataSnapshot.getValue();
+//                System.out.println(document);
+//                System.out.println("Kitchen child data changed");
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError error) {
+//            }
+//        });
 
         // Just keeping the thread alive because we have firebase event-listeners
         while (true) {

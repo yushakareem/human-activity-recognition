@@ -23,7 +23,7 @@ public class DateFormatter {
     }
 
     // owltime also takes seconds into account
-    public Date convertOWLtimeToDate(Integer owltime) {
+    public Date convertOWLtimeToDate(int owltime) {
 
         Date date = new Date();
 
@@ -36,5 +36,15 @@ public class DateFormatter {
         date.setSeconds(seconds);
 
         return date;
+    }
+
+    public int convertXSDdatetimeToOWLtime(String xsdDateTime) throws ParseException {
+
+        return this.convertDateToOWLtime(this.convertXSDdatetimeToDate(xsdDateTime));
+    }
+
+    public String convertOWLtimeToXSDdatetime(int owltime){
+
+        return this.convertDateToXSDdatetime(this.convertOWLtimeToDate(owltime));
     }
 }

@@ -12,6 +12,10 @@ public class MainHAR {
         // To suppress log4j warning coming from owloop-2.1
         Logger.getRootLogger().setLevel(Level.OFF);
 
+        // Initialize KitchenActivitiesOntology
+        KitchenActivitiesOntology kitchenOntology = new KitchenActivitiesOntology();
+        kitchenOntology.initializeOntology();
+
         // Firebase initialization
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(MainHAR.class.getClassLoader().getResourceAsStream("key.json")))
@@ -19,31 +23,43 @@ public class MainHAR {
                 .build();
         FirebaseApp.initializeApp(options);
 
-        // Firebase event-listeners
+        // Firebase event-listener for "/fd06/isIn"
         DatabaseReference isInRef = FirebaseDatabase.getInstance()
                 .getReference("/fd06/isIn");
 
         isInRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                // I want to check if it is Kitchen or LivingRoom child
-                // based on that initialize that ontology
-                System.out.println("Child added");
+                System.out.println("--> Child added");
+                if (dataSnapshot.getKey().equals("Kitchen")) {
+                    //update in ontology fd06 isIn Kitchen
+                    kitchenOntology.addOrUpdateObjectProperty("fd06", "isIn", "Kitchen");
+                    //update in ontology Instant_CurrentTime hasTime _____
+
+                } else if (dataSnapshot.getKey().equals("LivingRoom")) {
+                    //update in ontology fd06 isIn LivingRoom
+                    //update in ontology Instant_CurrentTime hasTime _____
+                }
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("Child changed");
+                System.out.println("--> Child changed");
+                if (dataSnapshot.getKey().equals("Kitchen")) {
+                    System.out.println("Update the kitchen ontology and reason.");
+                } else if (dataSnapshot.getKey().equals("LivingRoom")) {
+                    System.out.println("Update the LivingRoom ontology and reason.");
+                }
             }
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                System.out.println("Child removed");
+                System.out.println("--> Child removed");
             }
 
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("Child moved");
+                System.out.println("--> Child moved");
             }
 
             @Override

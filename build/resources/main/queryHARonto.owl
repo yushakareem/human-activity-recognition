@@ -25,7 +25,7 @@
     <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
 
     <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
-        <rdfs:comment>CCYY-MM-DDThh:mm:ss</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCYY-MM-DDThh:mm:ss</rdfs:comment>
     </rdf:Description>
     
 
@@ -38,6 +38,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#associatedWithWatchID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#associatedWithWatchID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Human"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#SmartWatch"/>
+    </owl:ObjectProperty>
     
 
 
@@ -93,7 +102,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#didActionPouring">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#HumanActivityRecognition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment>State/Action/Activity</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State/Action/Activity</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -154,6 +163,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Ambience">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#EnvironmentalSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#EnvironmentalSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Sensor"/>
     </owl:Class>
     
 
@@ -230,6 +247,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#SmartSuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#SmartSuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#WearableSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#SmartWatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#SmartWatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#WearableSensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Space -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Space"/>
@@ -246,6 +279,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#UtilizableFurniture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#WearableSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#WearableSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Sensor"/>
     </owl:Class>
     
 
@@ -357,6 +398,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Human"/>
+        <associatedWithWatchID rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#fd06"/>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-07T17:22:00</didActivityHavingBreakfast>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-08T17:22:00</didActivityHavingBreakfast>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09T17:22:00</didActivityHavingBreakfast>
@@ -366,6 +408,22 @@
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-13T17:22:00</didActivityHavingBreakfast>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-14T17:22:00</didActivityHavingBreakfast>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:22:00</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T11:41:34</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T11:42:04</didActivityHavingBreakfast>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#fd06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#fd06"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#9def -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#9def">
+        <associatedWithWatchID rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#9def"/>
     </owl:NamedIndividual>
     
 
@@ -378,6 +436,17 @@
         <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:20:00</didActionPouring>
         <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:18:00</isInKitchen>
         <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T17:19:00</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-03T11:41:34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-03T11:41:34">
+        <didActionDrinking rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T10:23:00</didActionDrinking>
+        <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T10:22:30</didActionPouring>
+        <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T10:21:40</isInKitchen>
+        <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T10:22:00</isNearKitchenTable>
     </owl:NamedIndividual>
 </rdf:RDF>
 

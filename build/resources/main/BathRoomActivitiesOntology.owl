@@ -1,0 +1,1268 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#"
+     xml:base="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology"
+     xmlns:BathRoomActivitiesOntology="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:LocalizationOnto1="http://www.semanticweb.org/Arianna/LocalizationOnto#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:KitchenActivitiesOntology="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:HumanActivityOntology="http://www.semanticweb.org/Arianna/HumanActivityOntology#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:LocalizationOnto="http://www.semanticweb.org/emaroLab/YushaKareem/LocalizationOnto#"
+     xmlns:time1="http://www.semanticweb.org/Arianna/LocalizationOnto#time:"
+     xmlns:time2="http://www.w3.org/2006/time#time:"
+     xmlns:PrototypeOntology="http://www.semanticweb.org/emaroLab/YushaKareem/PrototypeOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:placeontology="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:time="http://www.w3.org/2006/time#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#pattern -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#pattern"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#didAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#didAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#didActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#didActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInInterval -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInInterval">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isNear -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isNear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Furniture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#associatedWithName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#associatedWithName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#brushedTeethAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#brushedTeethAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#drankAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#drankAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hadBreakfastAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hadBreakfastAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTimeBegin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTimeBegin">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTimeEnd -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTimeEnd">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isDoingActivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isDoingActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInBathRoomAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInBathRoomAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInKitchenAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInKitchenAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#nearKitchenTableAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#nearKitchenTableAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#nearWashbasinAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#nearWashbasinAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#pouredAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#pouredAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#routineMorningHygieneAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#routineMorningHygieneAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Activity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Ambience -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Ambience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Brightness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Brightness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#EnvironmentalSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#EnvironmentalSensor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#EnvironmentalSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Sensor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WearableSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Furniture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Ambience"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The movable articles that are used to make a room or building suitable for living or working in, such as tables, chairs, or desks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Because an Instant is an infinitely small Interval.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#OccupiableFurniture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#OccupiableFurniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#UtilizableFurniture"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Furniture that is utilizable by human and also occupiable by human. For example, Chair, Sofa etc. Note that, Cabinet and Stove are not occupiable by human.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#PIR -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#PIR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#EnvironmentalSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Proximity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Proximity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#EnvironmentalSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Robot -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Robot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Ambience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Sensor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SmartSuit -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SmartSuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WearableSensor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SmartWatch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SmartWatch -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SmartWatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WearableSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Space -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Space">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Temperature -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#EnvironmentalSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Time -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#UtilizableFurniture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#UtilizableFurniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Furniture"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Furniture that can be utilized by a human. For example, Cabinet, Desk, Chair, Stove etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WearableSensor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WearableSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BathRoom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BathRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BrushingTeeth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BrushingTeeth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Drinking -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Drinking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Falling -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Falling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#HavingBreakfast -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#HavingBreakfast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant_CurrentTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant_CurrentTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant"/>
+        <BathRoomActivitiesOntology:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54069</BathRoomActivitiesOntology:hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Afternoon -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Afternoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+        <BathRoomActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43200</BathRoomActivitiesOntology:hasTimeBegin>
+        <BathRoomActivitiesOntology:hasTimeEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64740</BathRoomActivitiesOntology:hasTimeEnd>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new in Nov 2018</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Breakfast -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Breakfast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+        <BathRoomActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25200</BathRoomActivitiesOntology:hasTimeBegin>
+        <BathRoomActivitiesOntology:hasTimeEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43200</BathRoomActivitiesOntology:hasTimeEnd>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Dinner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Dinner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Evening -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Evening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+        <BathRoomActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64800</BathRoomActivitiesOntology:hasTimeBegin>
+        <BathRoomActivitiesOntology:hasTimeEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86340</BathRoomActivitiesOntology:hasTimeEnd>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new in Nov 2018</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Lunch -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Lunch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Morning -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Morning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+        <BathRoomActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21600</BathRoomActivitiesOntology:hasTimeBegin>
+        <BathRoomActivitiesOntology:hasTimeEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43200</BathRoomActivitiesOntology:hasTimeEnd>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new in Nov 2018</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Night -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Night">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+        <BathRoomActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</BathRoomActivitiesOntology:hasTimeBegin>
+        <BathRoomActivitiesOntology:hasTimeEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21540</BathRoomActivitiesOntology:hasTimeEnd>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new in Nov 2018</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Kitchen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Kitchen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#KitchenTable -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#KitchenTable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#UtilizableFurniture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#LivingRoom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#LivingRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#LyingDown -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#LyingDown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Pouring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Pouring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#RoutineMorningHygiene -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#RoutineMorningHygiene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SittingDown -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#SittingDown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Walking -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Walking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Washbasin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Washbasin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#UtilizableFurniture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WorkDesk -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#WorkDesk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#UtilizableFurniture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#d456 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#d456"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#fd06 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#fd06">
+        <BathRoomActivitiesOntology:didAction rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BrushingTeeth"/>
+        <BathRoomActivitiesOntology:isIn rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BathRoom"/>
+        <BathRoomActivitiesOntology:isNear rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Washbasin"/>
+        <BathRoomActivitiesOntology:associatedWithName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yusha</BathRoomActivitiesOntology:associatedWithName>
+        <BathRoomActivitiesOntology:brushedTeethAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32410</BathRoomActivitiesOntology:brushedTeethAt>
+        <BathRoomActivitiesOntology:isInBathRoomAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32400</BathRoomActivitiesOntology:isInBathRoomAt>
+        <BathRoomActivitiesOntology:nearWashbasinAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32405</BathRoomActivitiesOntology:nearWashbasinAt>
+        <BathRoomActivitiesOntology:userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds rdf:datatype="http://www.w3.org/2001/XMLSchema#long">10</BathRoomActivitiesOntology:userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#9def -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#9def"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Ambience"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Robot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Sensor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Brightness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#PIR"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Proximity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Temperature"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#CT">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#avgWD">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#elpsdWD">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#int">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#ins">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RoutineMorningHygiene</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Human"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BathRoom"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#didAction"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BrushingTeeth"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isNear"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Washbasin"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInInterval"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant_CurrentTime"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Afternoon"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTime"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant_CurrentTime"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#CT"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInBathRoomAt"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t1"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#nearWashbasinAt"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#brushedTeethAt"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t3"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#avgWD"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t1"/>
+                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2"/>
+                                                                                                        </swrl:arguments>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2"/>
+                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t3"/>
+                                                                                                                </swrl:arguments>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t3"/>
+                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#CT"/>
+                                                                                                                        </swrl:arguments>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#subtract"/>
+                                                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#elpsdWD"/>
+                                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#CT"/>
+                                                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2"/>
+                                                                                                                                </swrl:arguments>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#elpsdWD"/>
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#avgWD"/>
+                                                                                                                                        </swrl:arguments>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#didActivity"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#RoutineMorningHygiene"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#routineMorningHygieneAt"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#CT"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TimeInterval</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t3"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTimeEnd"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#int"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#ins"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTimeBegin"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#int"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#hasTime"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#ins"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t1"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#t2"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#int"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInInterval"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#ins"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#int"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.5.1) https://github.com/owlcs/owlapi/ -->
+
+

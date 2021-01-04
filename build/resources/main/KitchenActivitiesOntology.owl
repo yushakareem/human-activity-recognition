@@ -574,7 +574,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant_CurrentTime">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant"/>
-        <KitchenActivitiesOntology:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62366</KitchenActivitiesOntology:hasTime>
+        <KitchenActivitiesOntology:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53543</KitchenActivitiesOntology:hasTime>
     </owl:NamedIndividual>
     
 
@@ -710,15 +710,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Sota -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Sota">
-        <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Robot"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Walking -->
 
 
@@ -757,16 +748,8 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#fd06">
-        <KitchenActivitiesOntology:didAction rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Drinking"/>
-        <KitchenActivitiesOntology:didAction rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Pouring"/>
-        <KitchenActivitiesOntology:isIn rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Kitchen"/>
-        <KitchenActivitiesOntology:isNear rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#KitchenTable"/>
         <KitchenActivitiesOntology:associatedWithName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yusha</KitchenActivitiesOntology:associatedWithName>
-        <KitchenActivitiesOntology:drankAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61320</KitchenActivitiesOntology:drankAt>
-        <KitchenActivitiesOntology:isInKitchenAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61200</KitchenActivitiesOntology:isInKitchenAt>
-        <KitchenActivitiesOntology:nearKitchenTableAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61260</KitchenActivitiesOntology:nearKitchenTableAt>
-        <KitchenActivitiesOntology:pouredAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61290</KitchenActivitiesOntology:pouredAt>
-        <KitchenActivitiesOntology:userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds rdf:datatype="http://www.w3.org/2001/XMLSchema#long">180</KitchenActivitiesOntology:userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds>
+        <KitchenActivitiesOntology:userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds rdf:datatype="http://www.w3.org/2001/XMLSchema#long">120</KitchenActivitiesOntology:userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds>
     </owl:NamedIndividual>
     
 

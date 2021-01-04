@@ -6,9 +6,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainHAR {
     public static void main(String[] args) throws IOException {
@@ -22,6 +21,15 @@ public class MainHAR {
                 "KitchenActivitiesOntology",
                 "src/main/resources/KitchenActivitiesOntology.owl",
                 "http://www.semanticweb.org/Arianna/KitchenActivitiesOntology",
+                true
+        );
+
+        // Initialize BathRoomActivitiesOntology
+        OntologyHandler bathRoomOntology = new OntologyHandler();
+        bathRoomOntology.initializeOntology(
+                "BathRoomActivitiesOntology",
+                "src/main/resources/BathRoomActivitiesOntology.owl",
+                "http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology",
                 true
         );
 
@@ -53,8 +61,11 @@ public class MainHAR {
                 System.out.println("--> Child added");
                 if (dataSnapshot.getKey().equals("associatedWithName")) {
                     kitchenOntology.addOrUpdateDataProperty("fd06", "associatedWithName", dataSnapshot.getValue());
+                    bathRoomOntology.addOrUpdateDataProperty("fd06", "associatedWithName", dataSnapshot.getValue());
                 } else if (dataSnapshot.getKey().equals("userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds")) {
                     kitchenOntology.addOrUpdateDataProperty("fd06", "userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds", dataSnapshot.getValue());
+                } else if (dataSnapshot.getKey().equals("userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds")) {
+                    bathRoomOntology.addOrUpdateDataProperty("fd06", "userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds", dataSnapshot.getValue());
                 }
             }
 
@@ -101,9 +112,21 @@ public class MainHAR {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                } else if (dataSnapshot.getKey().equals("LivingRoom")) {
-                    //update in ontology fd06 isIn LivingRoom
-                    //update in ontology Instant_CurrentTime hasTime <insert_latest_time>
+                } else if (dataSnapshot.getKey().equals("BathRoom")) {
+                    //set Flag
+                    bathRoomOntology.setIsRunningFlag(true);
+                    //update in ontology: fd06 isIn BathRoom
+                    bathRoomOntology.addOrUpdateObjectProperty("fd06", "isIn", "BathRoom");
+                    //update in ontology: fd06 isInBathRoomAt <datasnapshot.getValue()>
+                    try {
+                        bathRoomOntology.addOrUpdateDataProperty(
+                                "fd06",
+                                "isInBathRoomAt",
+                                formatter.convertXSDdatetimeToOWLtime(String.valueOf(dataSnapshot.getValue()))
+                        );
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -123,8 +146,19 @@ public class MainHAR {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                } else if (dataSnapshot.getKey().equals("LivingRoom")) {
-                    //update in ontology Instant_CurrentTime hasTime <insert_latest_time>
+                } else if (dataSnapshot.getKey().equals("BathRoom")) {
+                    //set Flag
+                    bathRoomOntology.setIsRunningFlag(true);
+                    //update in ontology: fd06 isInBathRoomAt <datasnapshot.getValue()>
+                    try {
+                        bathRoomOntology.addOrUpdateDataProperty(
+                                "fd06",
+                                "isInBathRoomAt",
+                                formatter.convertXSDdatetimeToOWLtime(String.valueOf(dataSnapshot.getValue()))
+                        );
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -145,9 +179,19 @@ public class MainHAR {
                     kitchenOntology.removeDataProperty("fd06", "nearKitchenTableAt");
                     kitchenOntology.removeDataProperty("fd06", "drankAt");
                     kitchenOntology.removeDataProperty("fd06", "pouredAt");
-                } else if (dataSnapshot.getKey().equals("LivingRoom")) {
+                } else if (dataSnapshot.getKey().equals("BathRoom")) {
+                    //set Flag
+                    bathRoomOntology.setIsRunningFlag(false);
                     //remove all object properties
+                    bathRoomOntology.removeObjectProperty("fd06", "isIn");
+                    bathRoomOntology.removeObjectProperty("fd06", "isNear");
+                    bathRoomOntology.removeObjectProperty("fd06", "didAction");
                     //remove all data   properties
+                    //kitchenOntology.removeDataProperty("fd06", "associatedWithName");
+                    //kitchenOntology.removeDataProperty("fd06", "userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds");
+                    bathRoomOntology.removeDataProperty("fd06", "isInBathRoomAt");
+                    bathRoomOntology.removeDataProperty("fd06", "nearWashbasinAt");
+                    bathRoomOntology.removeDataProperty("fd06", "brushedTeethAt");
                 }
             }
 
@@ -187,9 +231,19 @@ public class MainHAR {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                } else if (dataSnapshot.getKey().equals("WorkDesk")) {
-                    //update in ontology fd06 isIn LivingRoom
-                    //update in ontology Instant_CurrentTime hasTime <insert_latest_time>
+                } else if (dataSnapshot.getKey().equals("Washbasin")) {
+                    //update in ontology: fd06 isNear Washbasin
+                    bathRoomOntology.addOrUpdateObjectProperty("fd06", "isNear", "Washbasin");
+                    //update in ontology: fd06 nearWashbasinAt <datasnapshot.getValue()>
+                    try {
+                        bathRoomOntology.addOrUpdateDataProperty(
+                                "fd06",
+                                "nearWashbasinAt",
+                                formatter.convertXSDdatetimeToOWLtime(String.valueOf(dataSnapshot.getValue()))
+                        );
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -248,6 +302,19 @@ public class MainHAR {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
+                } else if (dataSnapshot.getKey().equals("BrushingTeeth")) {
+                    //update in ontology: fd06 didAction BrushingTeeth
+                    bathRoomOntology.addOrUpdateObjectProperty("fd06", "didAction", "BrushingTeeth");
+                    //update in ontology: fd06 pouredAt <datasnapshot.getValue()>
+                    try {
+                        bathRoomOntology.addOrUpdateDataProperty(
+                                "fd06",
+                                "brushedTeethAt",
+                                formatter.convertXSDdatetimeToOWLtime(String.valueOf(dataSnapshot.getValue()))
+                        );
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -268,10 +335,9 @@ public class MainHAR {
             }
         });
 
-        // Periodic task: update current time in ontology and reason
-        ScheduledExecutorService executor =
-                Executors.newSingleThreadScheduledExecutor();
-        Runnable periodicTask = new Runnable() {
+        //Timertask
+        TimerTask task = new TimerTask() {
+            @Override
             public void run() {
                 System.out.println("---- Periodic run");
                 if (kitchenOntology.getIsRunningFlag()) {
@@ -280,7 +346,8 @@ public class MainHAR {
                     kitchenOntology.updateCurrentTime();
                     // reason and save recognised activity details in queryHAROnto
                     String inference = kitchenOntology.inferObjectProperty("fd06", "didActivity");
-                    if (inference.equalsIgnoreCase("HavingBreakfast")) {
+                    System.out.println("======"+inference);
+                    if (inference != null && inference.equalsIgnoreCase("HavingBreakfast")) {
                         System.out.println("---- Activity recognised: Updating queryHARonto");
                         //put all relevant info in queryHARonto
                         // Yusha associatedWithWatchID fd06
@@ -308,15 +375,46 @@ public class MainHAR {
                         // didActionDrinking xsd:datetime
                         queryHAROntology.addDataProperty(individual, "didActionDrinking", XSD_drankAtTime);
                     }
+                } else if (bathRoomOntology.getIsRunningFlag()) {
+                    System.out.println("---- BathRoomOnto Flag "+bathRoomOntology.getIsRunningFlag());
+                    // update current time in BathRoomActivitiesOnto
+                    bathRoomOntology.updateCurrentTime();
+                    // reason and save recognised activity details in queryHAROnto
+                    String inference = bathRoomOntology.inferObjectProperty("fd06", "didActivity");
+                    if (inference != null && inference.equalsIgnoreCase("RoutineMorningHygiene")) {
+                        System.out.println("---- Activity recognised: Updating queryHARonto");
+                        //put all relevant info in queryHARonto
+                        // Yusha associatedWithWatchID fd06
+                        queryHAROntology.addOrUpdateObjectProperty("Yusha", "associatedWithWatchID", "fd06");
+                        // Yusha didActivityHavingBreakfast xsd:datetime
+                        String routineMorningHygieneAtTime = bathRoomOntology.inferDataProperty("fd06", "routineMorningHygieneAt");
+                        String XSD_routineMorningHygieneAtTime = formatter.convertOWLtimeToXSDdatetime(Integer.parseInt(routineMorningHygieneAtTime));
+                        queryHAROntology.addDataProperty("Yusha", "didActivityRoutineMorningHygiene", XSD_routineMorningHygieneAtTime);
+                        // Yusha-didActivityRoutineMorningHygiene-xsd:datetime
+                        String individual = "Yusha-didActivityRoutineMorningHygiene-"+XSD_routineMorningHygieneAtTime;
+                        String isInBathRoomAtTime = bathRoomOntology.inferDataProperty("fd06", "isInBathRoomAt");
+                        String nearWashbasinAtTime = bathRoomOntology.inferDataProperty("fd06", "nearWashbasinAt");
+                        String brushedTeethAtTime = bathRoomOntology.inferDataProperty("fd06", "brushedTeethAt");
+                        String XSD_isInBathRoomAtTime = formatter.convertOWLtimeToXSDdatetime(Integer.parseInt(isInBathRoomAtTime));
+                        String XSD_nearWashbasinAtTime = formatter.convertOWLtimeToXSDdatetime(Integer.parseInt(nearWashbasinAtTime));
+                        String XSD_brushedTeethAtTime = formatter.convertOWLtimeToXSDdatetime(Integer.parseInt(brushedTeethAtTime));
+                        // isInKitchen xsd:datatime
+                        queryHAROntology.addDataProperty(individual, "isInBathRoom", XSD_isInBathRoomAtTime);
+                        // isNearKitchenTable xsd:datetime
+                        queryHAROntology.addDataProperty(individual, "isNearWashbasin", XSD_nearWashbasinAtTime);
+                        // didActionPouring xsd:datetime
+                        queryHAROntology.addDataProperty(individual, "didActionBrushingTeeth", XSD_brushedTeethAtTime);
+                    }
                 }
             }
         };
-        executor.scheduleAtFixedRate(periodicTask, 0, 60, TimeUnit.SECONDS);
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(task, 0, 30*1000);
 
         // Keeping the thread alive because we have firebase event-listeners
         while (true) {
             try {
-                Thread.sleep(5);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

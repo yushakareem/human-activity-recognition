@@ -2,24 +2,24 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#"
      xml:base="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:LocalizationOnto1="http://www.semanticweb.org/Arianna/LocalizationOnto#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:KitchenActivitiesOntology="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:HumanActivityOntology="http://www.semanticweb.org/Arianna/HumanActivityOntology#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:time="http://www.w3.org/2006/time#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:LocalizationOnto="http://www.semanticweb.org/emaroLab/YushaKareem/LocalizationOnto#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:time1="http://www.semanticweb.org/Arianna/LocalizationOnto#time:"
      xmlns:time2="http://www.w3.org/2006/time#time:"
-     xmlns:PrototypeOntology="http://www.semanticweb.org/emaroLab/YushaKareem/PrototypeOntology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:placeontology="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:time="http://www.w3.org/2006/time#">
+     xmlns:LocalizationOnto="http://www.semanticweb.org/emaroLab/YushaKareem/LocalizationOnto#"
+     xmlns:LocalizationOnto1="http://www.semanticweb.org/Arianna/LocalizationOnto#"
+     xmlns:PrototypeOntology="http://www.semanticweb.org/emaroLab/YushaKareem/PrototypeOntology#"
+     xmlns:HumanActivityOntology="http://www.semanticweb.org/Arianna/HumanActivityOntology#"
+     xmlns:KitchenActivitiesOntology="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology"/>
     
 
@@ -32,12 +32,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
@@ -45,13 +43,11 @@
 
     <!-- http://purl.org/dc/terms/created -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
@@ -59,13 +55,11 @@
 
     <!-- http://purl.org/dc/terms/isVersionOf -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
@@ -73,13 +67,11 @@
 
     <!-- http://purl.org/dc/terms/modified -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
-
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
@@ -87,13 +79,11 @@
 
     <!-- http://www.w3.org/2001/XMLSchema#pattern -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#pattern"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
     
@@ -101,13 +91,11 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
     
@@ -115,13 +103,11 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#note -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
@@ -129,13 +115,11 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     
@@ -149,12 +133,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#didAction -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#didAction">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Human"/>
@@ -165,7 +147,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#didActivity -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#didActivity">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Human"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Activity"/>
@@ -174,7 +155,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isIn -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isIn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Human"/>
@@ -185,7 +165,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isInInterval -->
 
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isInInterval">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
@@ -194,7 +173,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isNear -->
-
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isNear">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -213,12 +191,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#associatedWithName -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#associatedWithName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -228,7 +204,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#drankAt -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#drankAt">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -236,7 +211,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hadBreakfastAt -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hadBreakfastAt">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -246,7 +220,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hasTime -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hasTime">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -254,7 +227,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hasTimeBegin -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hasTimeBegin">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -264,7 +236,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hasTimeEnd -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#hasTimeEnd">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -272,7 +243,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isDoingActivity -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isDoingActivity">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Human"/>
@@ -283,7 +253,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isInKitchenAt -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isInKitchenAt">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -291,7 +260,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#nearKitchenTableAt -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#nearKitchenTableAt">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -301,7 +269,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#pouredAt -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#pouredAt">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -309,7 +276,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds -->
-
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -325,12 +291,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Activity"/>
@@ -340,13 +304,11 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Activity -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Activity"/>
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Ambience -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Ambience">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Space"/>
@@ -356,7 +318,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Brightness -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Brightness">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#EnvironmentalSensor"/>
     </owl:Class>
@@ -364,7 +325,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#EnvironmentalSensor -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#EnvironmentalSensor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Sensor"/>
@@ -374,7 +334,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Furniture -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Furniture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Ambience"/>
@@ -386,7 +345,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Human -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Human">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Space"/>
     </owl:Class>
@@ -394,7 +352,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
@@ -405,7 +362,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Time"/>
     </owl:Class>
@@ -413,7 +369,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#OccupiableFurniture -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#OccupiableFurniture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#UtilizableFurniture"/>
@@ -424,7 +379,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#PIR -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#PIR">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#EnvironmentalSensor"/>
     </owl:Class>
@@ -432,7 +386,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Proximity -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Proximity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#EnvironmentalSensor"/>
@@ -442,7 +395,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Robot -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Robot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Space"/>
     </owl:Class>
@@ -450,7 +402,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Room -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Room">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Ambience"/>
@@ -460,7 +411,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Sensor -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Sensor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Space"/>
     </owl:Class>
@@ -468,7 +418,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#SmartSuit -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#SmartSuit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WearableSensor"/>
@@ -479,7 +428,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#SmartWatch -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#SmartWatch">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WearableSensor"/>
     </owl:Class>
@@ -487,7 +435,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Space -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Space">
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Time"/>
@@ -497,7 +444,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Temperature -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Temperature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#EnvironmentalSensor"/>
     </owl:Class>
@@ -506,13 +452,11 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Time -->
 
-
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Time"/>
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#UtilizableFurniture -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#UtilizableFurniture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Furniture"/>
@@ -522,7 +466,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WearableSensor -->
-
 
     <owl:Class rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WearableSensor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Sensor"/>
@@ -538,12 +481,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Drinking -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Drinking">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action"/>
@@ -553,7 +494,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Falling -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Falling">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action"/>
     </owl:NamedIndividual>
@@ -561,7 +501,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#HavingBreakfast -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#HavingBreakfast">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Activity"/>
@@ -571,7 +510,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant_CurrentTime -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant_CurrentTime">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant"/>
         <KitchenActivitiesOntology:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53543</KitchenActivitiesOntology:hasTime>
@@ -580,7 +518,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Afternoon -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Afternoon">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
@@ -593,7 +530,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Breakfast -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Breakfast">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
         <KitchenActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25200</KitchenActivitiesOntology:hasTimeBegin>
@@ -604,7 +540,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Dinner -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Dinner">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
     </owl:NamedIndividual>
@@ -612,7 +547,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Evening -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Evening">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
@@ -625,7 +559,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Lunch -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Lunch">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
     </owl:NamedIndividual>
@@ -633,7 +566,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Morning -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Morning">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
@@ -646,7 +578,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Night -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Night">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval"/>
         <KitchenActivitiesOntology:hasTimeBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</KitchenActivitiesOntology:hasTimeBegin>
@@ -658,7 +589,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Kitchen -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Kitchen">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Room"/>
     </owl:NamedIndividual>
@@ -666,7 +596,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#KitchenTable -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#KitchenTable">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#UtilizableFurniture"/>
@@ -676,7 +605,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#LivingRoom -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#LivingRoom">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Room"/>
     </owl:NamedIndividual>
@@ -684,7 +612,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#LyingDown -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#LyingDown">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action"/>
@@ -694,7 +621,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Pouring -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Pouring">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action"/>
     </owl:NamedIndividual>
@@ -702,7 +628,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#SittingDown -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#SittingDown">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action"/>
@@ -712,7 +637,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Walking -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Walking">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Action"/>
     </owl:NamedIndividual>
@@ -720,7 +644,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WorkDesk -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WorkDesk">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#UtilizableFurniture"/>
@@ -730,7 +653,6 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WorkingFromHome -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#WorkingFromHome">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Activity"/>
     </owl:NamedIndividual>
@@ -739,13 +661,11 @@
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#d456 -->
 
-
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#d456"/>
     
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#fd06 -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#fd06">
         <KitchenActivitiesOntology:associatedWithName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yusha</KitchenActivitiesOntology:associatedWithName>
@@ -755,7 +675,6 @@
 
 
     <!-- http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#9def -->
-
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#9def"/>
     
@@ -768,7 +687,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
@@ -798,7 +716,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
 
     <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlaceOntology#h">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
@@ -940,7 +857,7 @@
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#isInInterval"/>
                                                                                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Instant_CurrentTime"/>
-                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Afternoon"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/KitchenActivitiesOntology#Interval_Evening"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -1231,6 +1148,5 @@
 
 
 
-<!-- Generated by the OWL API (version 2.5.1) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

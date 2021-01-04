@@ -89,12 +89,14 @@ public class OntologyHandler {
     public String inferObjectProperty(String subject, String objectProperty) {
         FullIndividualDesc individualDesc = new FullIndividualDesc(subject, ontoRef);
         individualDesc.readAxioms();
+        ontoRef.synchronizeReasoner();
         return ontoRef.getOWLObjectName(individualDesc.getIndividualFromObjectProperty(objectProperty));
     }
 
     public String inferDataProperty(String subject, String dataProperty) {
         FullIndividualDesc individualDesc = new FullIndividualDesc(subject, ontoRef);
         individualDesc.readAxioms();
+        ontoRef.synchronizeReasoner();
         return ontoRef.getOWLObjectName(individualDesc.getLiteralFromDataProperty(dataProperty));
     }
 }

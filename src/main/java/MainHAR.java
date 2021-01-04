@@ -58,8 +58,28 @@ public class MainHAR {
         userDetailsRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child added");
+                //System.out.println("--> Child added");
                 if (dataSnapshot.getKey().equals("associatedWithName")) {
+                    //set Flag
+                    //remove all object properties
+                    kitchenOntology.removeObjectProperty("fd06", "isIn");
+                    kitchenOntology.removeObjectProperty("fd06", "isNear");
+                    kitchenOntology.removeObjectProperty("fd06", "didAction");
+                    //remove all data   properties
+                    kitchenOntology.removeDataProperty("fd06", "isInKitchenAt");
+                    kitchenOntology.removeDataProperty("fd06", "nearKitchenTableAt");
+                    kitchenOntology.removeDataProperty("fd06", "drankAt");
+                    kitchenOntology.removeDataProperty("fd06", "pouredAt");
+                    //set Flag
+                    //remove all object properties
+                    bathRoomOntology.removeObjectProperty("fd06", "isIn");
+                    bathRoomOntology.removeObjectProperty("fd06", "isNear");
+                    bathRoomOntology.removeObjectProperty("fd06", "didAction");
+                    //remove all data   properties
+                    bathRoomOntology.removeDataProperty("fd06", "isInBathRoomAt");
+                    bathRoomOntology.removeDataProperty("fd06", "nearWashbasinAt");
+                    bathRoomOntology.removeDataProperty("fd06", "brushedTeethAt");
+
                     kitchenOntology.addOrUpdateDataProperty("fd06", "associatedWithName", dataSnapshot.getValue());
                     bathRoomOntology.addOrUpdateDataProperty("fd06", "associatedWithName", dataSnapshot.getValue());
                 } else if (dataSnapshot.getKey().equals("userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds")) {
@@ -71,17 +91,17 @@ public class MainHAR {
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child changed");
+                //System.out.println("--> Child changed");
             }
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                System.out.println("--> Child removed");
+                //System.out.println("--> Child removed");
             }
 
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child moved");
+                //System.out.println("--> Child moved");
             }
 
             @Override
@@ -96,10 +116,18 @@ public class MainHAR {
         isInRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child added");
+                //System.out.println("--> Child added");
+                System.out.println("--> Localization data added to DB");
                 if (dataSnapshot.getKey().equals("Kitchen")) {
+                    System.out.println("-----> Kitchen ontology updated");
+                    System.out.println("-----> (isIn Kitchen)");
                     //set Flag
                     kitchenOntology.setIsRunningFlag(true);
+
+                    //------
+                    bathRoomOntology.setIsRunningFlag(false);
+                    //------
+
                     //update in ontology: fd06 isIn Kitchen
                     kitchenOntology.addOrUpdateObjectProperty("fd06", "isIn", "Kitchen");
                     //update in ontology: fd06 isInKitchenAt <datasnapshot.getValue()>
@@ -113,8 +141,15 @@ public class MainHAR {
                         e.printStackTrace();
                     }
                 } else if (dataSnapshot.getKey().equals("BathRoom")) {
+                    System.out.println("-----> BathRoom ontology updated");
+                    System.out.println("-----> (isIn BathRoom)");
                     //set Flag
                     bathRoomOntology.setIsRunningFlag(true);
+
+                    //------
+                    kitchenOntology.setIsRunningFlag(false);
+                    //------
+
                     //update in ontology: fd06 isIn BathRoom
                     bathRoomOntology.addOrUpdateObjectProperty("fd06", "isIn", "BathRoom");
                     //update in ontology: fd06 isInBathRoomAt <datasnapshot.getValue()>
@@ -132,8 +167,11 @@ public class MainHAR {
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child changed");
+                //System.out.println("--> Child changed");
+
                 if (dataSnapshot.getKey().equals("Kitchen")) {
+                    System.out.println("-----> Kitchen ontology updated");
+                    System.out.println("-----> (isIn Kitchen)");
                     //set Flag
                     kitchenOntology.setIsRunningFlag(true);
                     //update in ontology: fd06 isInKitchenAt <datasnapshot.getValue()>
@@ -147,6 +185,8 @@ public class MainHAR {
                         e.printStackTrace();
                     }
                 } else if (dataSnapshot.getKey().equals("BathRoom")) {
+                    System.out.println("-----> BathRoom ontology updated");
+                    System.out.println("-----> (isIn BathRoom)");
                     //set Flag
                     bathRoomOntology.setIsRunningFlag(true);
                     //update in ontology: fd06 isInBathRoomAt <datasnapshot.getValue()>
@@ -164,35 +204,37 @@ public class MainHAR {
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                System.out.println("--> Child removed");
-                if (dataSnapshot.getKey().equals("Kitchen")) {
-                    //set Flag
-                    kitchenOntology.setIsRunningFlag(false);
-                    //remove all object properties
-                    kitchenOntology.removeObjectProperty("fd06", "isIn");
-                    kitchenOntology.removeObjectProperty("fd06", "isNear");
-                    kitchenOntology.removeObjectProperty("fd06", "didAction");
-                    //remove all data   properties
-                    //kitchenOntology.removeDataProperty("fd06", "associatedWithName");
-                    //kitchenOntology.removeDataProperty("fd06", "userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds");
-                    kitchenOntology.removeDataProperty("fd06", "isInKitchenAt");
-                    kitchenOntology.removeDataProperty("fd06", "nearKitchenTableAt");
-                    kitchenOntology.removeDataProperty("fd06", "drankAt");
-                    kitchenOntology.removeDataProperty("fd06", "pouredAt");
-                } else if (dataSnapshot.getKey().equals("BathRoom")) {
-                    //set Flag
-                    bathRoomOntology.setIsRunningFlag(false);
-                    //remove all object properties
-                    bathRoomOntology.removeObjectProperty("fd06", "isIn");
-                    bathRoomOntology.removeObjectProperty("fd06", "isNear");
-                    bathRoomOntology.removeObjectProperty("fd06", "didAction");
-                    //remove all data   properties
-                    //kitchenOntology.removeDataProperty("fd06", "associatedWithName");
-                    //kitchenOntology.removeDataProperty("fd06", "userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds");
-                    bathRoomOntology.removeDataProperty("fd06", "isInBathRoomAt");
-                    bathRoomOntology.removeDataProperty("fd06", "nearWashbasinAt");
-                    bathRoomOntology.removeDataProperty("fd06", "brushedTeethAt");
-                }
+                //System.out.println("--> Child removed");
+//                if (dataSnapshot.getKey().equals("Kitchen")) {
+//                    System.out.println("-----> Kitchen ontology cleaned");
+//                    //set Flag
+//                    kitchenOntology.setIsRunningFlag(false);
+//                    //remove all object properties
+//                    kitchenOntology.removeObjectProperty("fd06", "isIn");
+//                    kitchenOntology.removeObjectProperty("fd06", "isNear");
+//                    kitchenOntology.removeObjectProperty("fd06", "didAction");
+//                    //remove all data   properties
+//                    //kitchenOntology.removeDataProperty("fd06", "associatedWithName");
+//                    //kitchenOntology.removeDataProperty("fd06", "userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds");
+//                    kitchenOntology.removeDataProperty("fd06", "isInKitchenAt");
+//                    kitchenOntology.removeDataProperty("fd06", "nearKitchenTableAt");
+//                    kitchenOntology.removeDataProperty("fd06", "drankAt");
+//                    kitchenOntology.removeDataProperty("fd06", "pouredAt");
+//                } else if (dataSnapshot.getKey().equals("BathRoom")) {
+//                    System.out.println("-----> BathRoom ontology cleaned");
+//                    //set Flag
+//                    bathRoomOntology.setIsRunningFlag(false);
+//                    //remove all object properties
+//                    bathRoomOntology.removeObjectProperty("fd06", "isIn");
+//                    bathRoomOntology.removeObjectProperty("fd06", "isNear");
+//                    bathRoomOntology.removeObjectProperty("fd06", "didAction");
+//                    //remove all data   properties
+//                    //kitchenOntology.removeDataProperty("fd06", "associatedWithName");
+//                    //kitchenOntology.removeDataProperty("fd06", "userPreference_averageTimeAtKitchenTableDuringBreakfast_inSeconds");
+//                    bathRoomOntology.removeDataProperty("fd06", "isInBathRoomAt");
+//                    bathRoomOntology.removeDataProperty("fd06", "nearWashbasinAt");
+//                    bathRoomOntology.removeDataProperty("fd06", "brushedTeethAt");
+//                }
             }
 
             @Override
@@ -212,13 +254,16 @@ public class MainHAR {
         isNearRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child added");
+                //System.out.println("--> Child added");
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child changed");
+                //System.out.println("--> Child changed");
+                System.out.println("--> Localization data added to DB");
                 if (dataSnapshot.getKey().equals("KitchenTable")) {
+                    System.out.println("-----> Kitchen ontology updated");
+                    System.out.println("-----> (isNear KitchenTable)");
                     //update in ontology: fd06 isNear KitchenTable
                     kitchenOntology.addOrUpdateObjectProperty("fd06", "isNear", "KitchenTable");
                     //update in ontology: fd06 nearKitchenTableAt <datasnapshot.getValue()>
@@ -232,6 +277,8 @@ public class MainHAR {
                         e.printStackTrace();
                     }
                 } else if (dataSnapshot.getKey().equals("Washbasin")) {
+                    System.out.println("-----> BathRoom ontology updated");
+                    System.out.println("-----> (isNear Washbasin)");
                     //update in ontology: fd06 isNear Washbasin
                     bathRoomOntology.addOrUpdateObjectProperty("fd06", "isNear", "Washbasin");
                     //update in ontology: fd06 nearWashbasinAt <datasnapshot.getValue()>
@@ -270,13 +317,16 @@ public class MainHAR {
         didActionRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child added");
+                //System.out.println("--> Child added");
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
-                System.out.println("--> Child changed");
+                //System.out.println("--> Child changed");
+                System.out.println("--> Action data added to DB");
                 if (dataSnapshot.getKey().equals("Drinking")) {
+                    System.out.println("-----> Kitchen ontology updated");
+                    System.out.println("-----> (didAction Drinking)");
                     //update in ontology: fd06 didAction Drinking
                     kitchenOntology.addOrUpdateObjectProperty("fd06", "didAction", "Drinking");
                     //update in ontology: fd06 drankAt <datasnapshot.getValue()>
@@ -290,6 +340,8 @@ public class MainHAR {
                         e.printStackTrace();
                     }
                 } else if (dataSnapshot.getKey().equals("Pouring")) {
+                    System.out.println("-----> Kitchen ontology updated");
+                    System.out.println("-----> (didAction Pouring)");
                     //update in ontology: fd06 didAction Pouring
                     kitchenOntology.addOrUpdateObjectProperty("fd06", "didAction", "Pouring");
                     //update in ontology: fd06 pouredAt <datasnapshot.getValue()>
@@ -303,6 +355,8 @@ public class MainHAR {
                         e.printStackTrace();
                     }
                 } else if (dataSnapshot.getKey().equals("BrushingTeeth")) {
+                    System.out.println("-----> BathRoom ontology updated");
+                    System.out.println("-----> (didAction BrushingTeeth)");
                     //update in ontology: fd06 didAction BrushingTeeth
                     bathRoomOntology.addOrUpdateObjectProperty("fd06", "didAction", "BrushingTeeth");
                     //update in ontology: fd06 pouredAt <datasnapshot.getValue()>
@@ -339,16 +393,17 @@ public class MainHAR {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                System.out.println("---- Periodic run");
                 if (kitchenOntology.getIsRunningFlag()) {
-                    System.out.println("---- KitchenOnto Flag "+kitchenOntology.getIsRunningFlag());
+                    //System.out.println("--> Periodic inference running");
+                    //System.out.println("---- KitchenOnto Flag "+kitchenOntology.getIsRunningFlag());
                     // update current time in kitchenActivitiesOnto
                     kitchenOntology.updateCurrentTime();
                     // reason and save recognised activity details in queryHAROnto
                     String inference = kitchenOntology.inferObjectProperty("fd06", "didActivity");
-                    System.out.println("======"+inference);
+                    //System.out.println("K, "+inference);
                     if (inference != null && inference.equalsIgnoreCase("HavingBreakfast")) {
-                        System.out.println("---- Activity recognised: Updating queryHARonto");
+                        System.out.println("=====> Activity recognised: HavingBreakfast");
+                        System.out.println("-----> Query ontology updated");
                         //put all relevant info in queryHARonto
                         // Yusha associatedWithWatchID fd06
                         queryHAROntology.addOrUpdateObjectProperty("Yusha", "associatedWithWatchID", "fd06");
@@ -374,15 +429,20 @@ public class MainHAR {
                         queryHAROntology.addDataProperty(individual, "didActionPouring", XSD_pouredAtTime);
                         // didActionDrinking xsd:datetime
                         queryHAROntology.addDataProperty(individual, "didActionDrinking", XSD_drankAtTime);
+                        kitchenOntology.setIsRunningFlag(false);
                     }
                 } else if (bathRoomOntology.getIsRunningFlag()) {
-                    System.out.println("---- BathRoomOnto Flag "+bathRoomOntology.getIsRunningFlag());
+                    //System.out.println("--> Periodic inference running");
+                    //System.out.println("---- BathRoomOnto Flag "+bathRoomOntology.getIsRunningFlag());
                     // update current time in BathRoomActivitiesOnto
                     bathRoomOntology.updateCurrentTime();
                     // reason and save recognised activity details in queryHAROnto
                     String inference = bathRoomOntology.inferObjectProperty("fd06", "didActivity");
+                    //System.out.println("B, "+inference);
                     if (inference != null && inference.equalsIgnoreCase("RoutineMorningHygiene")) {
-                        System.out.println("---- Activity recognised: Updating queryHARonto");
+                        //System.out.println("---- Activity recognised: Updating queryHARonto");
+                        System.out.println("=====> Activity recognised: RoutineMorningHygiene");
+                        System.out.println("-----> Query ontology updated");
                         //put all relevant info in queryHARonto
                         // Yusha associatedWithWatchID fd06
                         queryHAROntology.addOrUpdateObjectProperty("Yusha", "associatedWithWatchID", "fd06");
@@ -404,12 +464,13 @@ public class MainHAR {
                         queryHAROntology.addDataProperty(individual, "isNearWashbasin", XSD_nearWashbasinAtTime);
                         // didActionPouring xsd:datetime
                         queryHAROntology.addDataProperty(individual, "didActionBrushingTeeth", XSD_brushedTeethAtTime);
+                        bathRoomOntology.setIsRunningFlag(false);
                     }
                 }
             }
         };
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(task, 0, 30*1000);
+        timer.scheduleAtFixedRate(task, 0, 2*1000);
 
         // Keeping the thread alive because we have firebase event-listeners
         while (true) {

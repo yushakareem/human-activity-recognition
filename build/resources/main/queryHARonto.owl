@@ -96,6 +96,13 @@
     
 
 
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#didActionBrushingTeeth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#didActionBrushingTeeth"/>
+    
+
+
     <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#didActionDrinking -->
 
 
@@ -134,6 +141,13 @@
     
 
 
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#isInBathRoom -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#isInBathRoom"/>
+    
+
+
     <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#isInKitchen -->
 
 
@@ -151,6 +165,13 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#HumanActivityRecognition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#isNearWashbasin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#isNearWashbasin"/>
     
 
 
@@ -464,7 +485,23 @@
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T11:41:34</didActivityHavingBreakfast>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T11:42:04</didActivityHavingBreakfast>
         <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T17:19:26</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T20:45:43</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T20:47:08</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T20:48:24</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T20:49:35</didActivityHavingBreakfast>
+        <didActivityHavingBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T23:04:22</didActivityHavingBreakfast>
         <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T13:50:19</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T15:01:09</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T20:11:05</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T21:23:59</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T21:26:27</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T21:28:47</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T21:30:41</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T21:39:20</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T21:40:46</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T22:55:20</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T23:01:33</didActivityRoutineMorningHygiene>
+        <didActivityRoutineMorningHygiene rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T23:22:27</didActivityRoutineMorningHygiene>
     </owl:NamedIndividual>
     
 
@@ -518,6 +555,187 @@
         <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T17:01:30</didActionPouring>
         <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T17:00:00</isInKitchen>
         <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-03T17:01:00</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:45:43 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:45:43">
+        <didActionDrinking rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:23:50</didActionDrinking>
+        <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:49</didActionPouring>
+        <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:21:20</isInKitchen>
+        <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:40</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:47:08 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:47:08">
+        <didActionDrinking rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:23:50</didActionDrinking>
+        <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:49</didActionPouring>
+        <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:21:20</isInKitchen>
+        <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:40</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:48:24 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:48:24">
+        <didActionDrinking rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:23:50</didActionDrinking>
+        <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:49</didActionPouring>
+        <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:21:20</isInKitchen>
+        <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:40</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:49:35 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T20:49:35">
+        <didActionDrinking rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:23:50</didActionDrinking>
+        <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:49</didActionPouring>
+        <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:21:20</isInKitchen>
+        <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:40</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T23:04:22 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityHavingBreakfast-2021-01-04T23:04:22">
+        <didActionDrinking rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:23:42</didActionDrinking>
+        <didActionPouring rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:48</didActionPouring>
+        <isInKitchen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:21:10</isInKitchen>
+        <isNearKitchenTable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:22:30</isNearKitchenTable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T15:01:09 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T15:01:09">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T09:00:10</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T09:00:00</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T09:00:05</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T20:11:05 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T20:11:05">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:55</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:53</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:23:59 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:23:59">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:06</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:00</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:02</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:26:27 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:26:27">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:06</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:00</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:02</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:28:47 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:28:47">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:32</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:21</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:30:41 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:30:41">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:55</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:53</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:39:20 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:39:20">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:32</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:21</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:40:46 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T21:40:46">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:55</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:53</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T22:55:20 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T22:55:20">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:32</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:21</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T23:01:33 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T23:01:33">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:55</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:52</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:53</isNearWashbasin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T23:22:27 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/QueryHumanActivityOntology#Yusha-didActivityRoutineMorningHygiene-2021-01-04T23:22:27">
+        <didActionBrushingTeeth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:32</didActionBrushingTeeth>
+        <isInBathRoom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:19</isInBathRoom>
+        <isNearWashbasin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-04T08:20:21</isNearWashbasin>
     </owl:NamedIndividual>
 </rdf:RDF>
 

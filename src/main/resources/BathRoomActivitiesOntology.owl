@@ -638,7 +638,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant_CurrentTime">
         <rdf:type rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant"/>
-        <BathRoomActivitiesOntology:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84380</BathRoomActivitiesOntology:hasTime>
+        <BathRoomActivitiesOntology:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5443</BathRoomActivitiesOntology:hasTime>
     </owl:NamedIndividual>
     
 
@@ -821,8 +821,13 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#fd06">
+        <BathRoomActivitiesOntology:didAction rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#BrushingTeeth"/>
+        <BathRoomActivitiesOntology:isNear rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Washbasin"/>
         <BathRoomActivitiesOntology:associatedWithName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yusha</BathRoomActivitiesOntology:associatedWithName>
-        <BathRoomActivitiesOntology:userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds rdf:datatype="http://www.w3.org/2001/XMLSchema#long">15</BathRoomActivitiesOntology:userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds>
+        <BathRoomActivitiesOntology:brushedTeethAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5429</BathRoomActivitiesOntology:brushedTeethAt>
+        <BathRoomActivitiesOntology:isInBathRoomAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5426</BathRoomActivitiesOntology:isInBathRoomAt>
+        <BathRoomActivitiesOntology:nearWashbasinAt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5427</BathRoomActivitiesOntology:nearWashbasinAt>
+        <BathRoomActivitiesOntology:userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds rdf:datatype="http://www.w3.org/2001/XMLSchema#long">10</BathRoomActivitiesOntology:userPreference_averageTimeAtWashbasinDuringMorningRoutine_inSeconds>
     </owl:NamedIndividual>
     
 
@@ -956,7 +961,7 @@
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#isInInterval"/>
                                                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Instant_CurrentTime"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Evening"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/Arianna/BathRoomActivitiesOntology#Interval_Night"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
